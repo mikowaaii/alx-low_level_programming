@@ -1,15 +1,12 @@
 #include <stdio.h>
 
 /**
- * puts - prints "Programming is like building a multilingual puzzle
+ * main - entry point
  *
- * @str: string to be printed
- *
- * Return: printed string or 0
+ * Return: printed string and then 0
  */
-char puts(char str)
+int main(void)
 {
-	char str[] = "\"Programming is like building a multilingual puzzle";
-	puts(str);
+	puts("\"Programming is like building a multilingual puzzle")
 	return 0;
 }
