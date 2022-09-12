@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return - prints "with proper grammar, but the outcome is a piece of art," then 0
+ * Return: prints string then new line
  */
 int main(void)
 {
