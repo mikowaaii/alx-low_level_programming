@@ -4,23 +4,16 @@
  * print_last_digit - prints the last digit of a number
  * @x: int to be checked
  *
- * Return: returns 0
+ * Return: returns the last digit
  */
 int print_last_digit(int x)
 {
-	int l;
+	int l = x % 10;
 
-	if (x > 0 || x == 0)
+	if (x < 0)
 	{
-		l = x % 10;
-		_putchar('0' + l);
-		return (l);
+		l = l * -1;
 	}
-	else
-	{
-		l = ((x * -1) % 10);
-		_putchar('0' + l);
-		return (l);
-	}
-	return (0);
+	_putchar('0' + l);
+	return (l);
 }
