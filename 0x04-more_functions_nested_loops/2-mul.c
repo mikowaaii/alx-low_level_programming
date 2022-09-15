@@ -5,12 +5,9 @@
  * @a: int to be multiplied
  * @b: int to be multiplied
  *
- * Return: returns multiplied value
+ * Return: returns result
  */
 int mul(int a, int b)
 {
-	int i;
-	i = (a * b);
-
-	return (i);
+	return (a * b);
 }
