@@ -12,7 +12,7 @@ int add(int a, int b)
 	int r;
 	r = (a + b);
 
-	if (r > 9)
+	if (r >= 10)
 	{
 		_putchar((r / 10) + '0');
 		_putchar((r % 10) + '0');
