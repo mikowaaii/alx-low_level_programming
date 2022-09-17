@@ -5,21 +5,9 @@
  * @a: int to be added
  * @b: int to be added
  *
- * Return: returns 0
+ * Return: returns result
  */
 int add(int a, int b)
 {
-	int r;
-	r = (a + b);
-
-	if (r >= 10)
-	{
-		_putchar((r / 10) + '0');
-		_putchar((r % 10) + '0');
-	}
-	else
-	{
-		_putchar((r % 10) + '0');
-	}
-	return (0);
+	return (a + b);
 }
