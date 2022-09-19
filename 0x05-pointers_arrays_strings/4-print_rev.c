@@ -10,11 +10,11 @@
 void print_rev(char *s)
 {
 	int x;
-	x = strlen(s);
 
+	x = strlen(s);
 	while (x--)
 	{
 		_putchar(*(s + x));
 	}
 	_putchar('\n');
-}	
+}
