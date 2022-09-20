@@ -9,13 +9,12 @@
  */
 void print_array(int *a, int n)
 {
-	int i = 0, x;
+	int i = 0;
 
 	while (i < n)
 	{
-		x = (*(a + i));
-		_putchar((x / 10) + '0');
-		_putchar((x % 10) + '0');
+		_putchar(((*(a + i)) / 10) + '0');
+		_putchar(((*(a + i)) / 10) + '0');
 		_putchar(',');
 		_putchar(' ');
 		i++;
