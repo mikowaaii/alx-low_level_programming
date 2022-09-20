@@ -10,12 +10,12 @@
 void print_array(int *a, int n)
 {
 	int i = 0;
-	char n;
+	char x;
 
 	while (i < n)
 	{
-		n = (*(a + i));
-		_putchar(n);
+		x = (*(a + i));
+		_putchar(x);
 		_putchar(',');
 		_putchar(' ');
 		i++;
