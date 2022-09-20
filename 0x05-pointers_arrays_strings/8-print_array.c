@@ -16,8 +16,15 @@ void print_array(int *a, int n)
 
 	while (i < n)
 	{
-		printf(", %d", a[i]);
-		i++;
+		if (n > 1)
+		{
+			printf(", %d", a[i]);
+			i++;
+		}
+		else
+		{
+			break;
+		}
 	}
 	_putchar('\n');
 }
