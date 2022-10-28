@@ -8,9 +8,10 @@
  * 0 if there is one or more chars in the string and if string
  * b is NULL.
  */
-unsigned int binary_to_uint(const char *b);
+unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i = 0, x;
+	unsigned int i = 0;
+	int x;
 	unsigned int num = 0;
 	unsigned int dec = 1;
 
@@ -18,22 +19,21 @@ unsigned int binary_to_uint(const char *b);
 	{
 		return (0);
 	}
-	while (*b != '\0')
+	while (b[i] != '\0')
 	{
 		i++;
-		b++;
 	}
 	for (x = i; x >= 0; x--)
 	{
-		if (b[x] != '0' && b[x] != '1')
+		if (b[x] != '0' || b[x] != '1')
 		{
 			return (0);
 		}
 		if (b[x] == '1')
 		{
 			num += dec;
-			dec *= 2;
 		}
+		dec *= 2;
 	}
 	return (num);
 }
